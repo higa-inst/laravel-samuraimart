@@ -140,3 +140,13 @@ label {
 .samuraimart-header-shoppingcart-icon {
   color: #ffffff;
 }
+
+.samuraimart-favorite-button {
+  border-radius: 2px;
+  border: solid 1px #0fbe9f;
+  background-color: #FFFFFF;
+}
+
+.text-favorite {
+  color: #0fbe9f;
+}
