@@ -44,7 +44,7 @@
                      <div class="col-5">
                         @if(Auth::user()->favorite_products()->where('product_id', $product->id)->exists())
                             <a 
-                                href="{{ route('favorites.destory', $product->id) }}"
+                                href="{{ route('favorites.destroy', $product->id) }}"
                                 class="btn samuraimart-favorite-button text-favorite w-100"
                                 onclick="event.preventDefault(); document.getElementById('favorites-destroy-form').submit();"
                             >
@@ -64,7 +64,7 @@
                      </div>
                  </div>
              </form>
-             <form id="favorites-destory-form" action="{{ route('favorites.destory', $product->id)}}" method="post" class="d-none">
+             <form id="favorites-destory-form" action="{{ route('favorites.destroy', $product->id)}}" method="post" class="d-none">
                 @csrf
                 @method('DELETE')
             </form>
